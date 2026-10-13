@@ -1,8 +1,9 @@
-import { Routes } from '@angular/router';
+ import { Routes } from '@angular/router';
 import { Contacto } from './pages/contacto/contacto';
 import { Experiencia } from './pages/experiencia/experiencia';
 import { Hojavida } from './pages/hojavida/hojavida';
 import { InfoPersonal } from './pages/info-personal/info-personal';
+import { Aprendizaje } from './pages/aprendizaje/aprendizaje';
 
 export const routes: Routes = [
   { path: '', component: Hojavida },
@@ -10,5 +11,6 @@ export const routes: Routes = [
   { path: 'info-personal', component: InfoPersonal },
   { path: 'experiencia', component: Experiencia },
   { path: 'contacto', component: Contacto },
+  { path: 'aprendizaje', component: Aprendizaje },
   { path: '**', redirectTo: '' }
 ];
