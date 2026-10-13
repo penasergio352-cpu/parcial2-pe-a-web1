@@ -1,0 +1,95 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  background: #f4f7fb;
+  color: #1e293b;
+  font-family: Arial, sans-serif;
+}
+
+.learning-page {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 24px 64px;
+}
+
+.hero {
+  padding: 42px;
+  margin-bottom: 36px;
+  border-radius: 20px;
+  color: white;
+  background: linear-gradient(135deg, #172554, #2563eb);
+}
+
+.eyebrow {
+  color: #bfdbfe;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h1 {
+  margin: 12px 0;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+}
+
+.hero p {
+  max-width: 700px;
+  line-height: 1.7;
+}
+
+section {
+  margin: 32px 0;
+}
+
+h2 {
+  margin-bottom: 16px;
+  color: #1d4ed8;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 4px 12px #0f172a0c;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #1e40af;
+}
+
+.card p,
+.knowledge-list {
+  line-height: 1.7;
+}
+
+.knowledge-list {
+  padding: 20px 20px 20px 42px;
+  border-radius: 14px;
+  background: white;
+}
+
+.knowledge-list li {
+  margin: 8px 0;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  padding: 9px 14px;
+  border-radius: 999px;
+  color: #1e40af;
+  background: #dbeafe;
+  font-weight: bold;
+}

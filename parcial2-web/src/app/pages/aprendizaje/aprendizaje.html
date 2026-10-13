@@ -1,1 +1,52 @@
-<p>aprendizaje works!</p>
+<main class="learning-page">
+  <header class="hero">
+    <span class="eyebrow">Mi proceso durante el curso</span>
+    <h1>Aprendizaje y desarrollo web</h1>
+    <p>
+      Aquí presento los temas estudiados, los conocimientos adquiridos,
+      las herramientas utilizadas y las actividades desarrolladas.
+    </p>
+  </header>
+
+  <section>
+    <h2>Temas estudiados</h2>
+    <div class="card-grid">
+      @for (tema of temas; track tema.nombre) {
+        <article class="card">
+          <h3>{{ tema.nombre }}</h3>
+          <p>{{ tema.detalle }}</p>
+        </article>
+      }
+    </div>
+  </section>
+
+  <section>
+    <h2>Conocimientos adquiridos</h2>
+    <ul class="knowledge-list">
+      @for (conocimiento of conocimientos; track conocimiento) {
+        <li>{{ conocimiento }}</li>
+      }
+    </ul>
+  </section>
+
+  <section>
+    <h2>Tecnologías y herramientas</h2>
+    <div class="tag-list">
+      @for (herramienta of herramientas; track herramienta) {
+        <span class="tag">{{ herramienta }}</span>
+      }
+    </div>
+  </section>
+
+  <section>
+    <h2>Proyectos y actividades</h2>
+    <div class="card-grid">
+      @for (actividad of actividades; track actividad.nombre) {
+        <article class="card">
+          <h3>{{ actividad.nombre }}</h3>
+          <p>{{ actividad.detalle }}</p>
+        </article>
+      }
+    </div>
+  </section>
+</main>
