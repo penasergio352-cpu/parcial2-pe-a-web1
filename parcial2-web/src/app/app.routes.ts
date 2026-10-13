@@ -4,6 +4,9 @@ import { Contacto } from './pages/contacto/contacto';
 import { Experiencia } from './pages/experiencia/experiencia';
 import { Hojavida } from './pages/hojavida/hojavida';
 import { InfoPersonal } from './pages/info-personal/info-personal';
+import { Punto3 } from './pages/punto3/punto3';
+
+
 
 export const routes: Routes = [
   { path: '', component: Hojavida },
@@ -12,5 +15,6 @@ export const routes: Routes = [
   { path: 'experiencia', component: Experiencia },
   { path: 'contacto', component: Contacto },
   { path: 'aprendizaje', component: Aprendizaje },
+  { path: 'punto3', component: Punto3 },
   { path: '**', redirectTo: '' }
 ]; 

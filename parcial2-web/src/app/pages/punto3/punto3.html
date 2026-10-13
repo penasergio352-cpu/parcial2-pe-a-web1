@@ -1,0 +1,43 @@
+<main class="america-page">
+  <header class="hero">
+    <span class="eyebrow">Fútbol colombiano · Cali</span>
+    <h1>América de Cali</h1>
+    <p>
+      Conoce la historia, identidad y algunos logros de uno de los clubes
+      más reconocidos del fútbol colombiano.
+    </p>
+  </header>
+
+  <section>
+    <h2>Identidad del club</h2>
+    <div class="card-grid">
+      @for (dato of datosDelClub; track dato.titulo) {
+        <article class="card">
+          <h3>{{ dato.titulo }}</h3>
+          <p>{{ dato.descripcion }}</p>
+        </article>
+      }
+    </div>
+  </section>
+
+  <section>
+    <h2>Trayectoria y logros</h2>
+    <ul class="achievement-list">
+      @for (logro of logros; track logro) {
+        <li>{{ logro }}</li>
+      }
+    </ul>
+  </section>
+
+  <section>
+    <h2>Lo que representa</h2>
+    <div class="card-grid">
+      @for (valor of valores; track valor.nombre) {
+        <article class="card value-card">
+          <h3>{{ valor.nombre }}</h3>
+          <p>{{ valor.descripcion }}</p>
+        </article>
+      }
+    </div>
+  </section>
+</main>
